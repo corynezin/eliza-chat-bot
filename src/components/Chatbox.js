@@ -6,14 +6,25 @@ const style = {
   width: "400px",
   height: "300px",
   marginTop: "50px",
-  overflow: "hidden"
+  overflow: "hidden",
+  whiteSpace: "pre"
 }
 
 export class Chatbox extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {text: ''}
+    this.addTextInput = this.addTextInput.bind(this)
+  }
+  addTextInput(text) {
+    this.setState({text: this.state.text + '<br>' + text})
+    console.log(this.state)
+  }
   render() {
     return (
-      <div style={style}>
-      </div>
+      <p style={style}>
+        {this.props.text}
+      </p>
     )
   }
 }

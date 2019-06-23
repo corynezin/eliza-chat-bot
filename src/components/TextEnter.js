@@ -8,10 +8,19 @@ const style = {
 }
 
 export class TextEnter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''}
+    this.handleChange = this.handleChange.bind(this)
+  }
+  handleChange() {
+    this.setState({value: event.target.value});
+    this.props.setTextInput(event.target.value)
+  }
   render() {
     return (
       <div>
-        <textarea style={style}></textarea>
+        <textarea value={this.state.value} onChange={this.handleChange} style={style}></textarea>
       </div>
     )
   }
