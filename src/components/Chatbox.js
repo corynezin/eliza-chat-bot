@@ -10,10 +10,14 @@ const style = {
 }
 
 export class Chatbox extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
-      <div style={style}>
-      </div>
+      <p style={style}>
+        {this.props.text}
+      </p>
     )
   }
 }

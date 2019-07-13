@@ -7,7 +7,7 @@ export class SendButton extends React.Component {
   }
 
   handleClick() {
-    console.log('heyo');
+    this.props.clickButton()
   }
   render() {
     var style = {
