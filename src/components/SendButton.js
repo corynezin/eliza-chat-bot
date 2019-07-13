@@ -12,21 +12,20 @@ export class SendButton extends React.Component {
   render() {
     var style = {
       "background-color": "navy",
-      "border": "bold",
+      "border": "none",
       "color": "white",
       "width": "50px",
-      "padding": "6px 0px",
+      "padding": "8px 0px",
       "height": "40px",
       "text-align": "center",
-      "text-decoration": "bold",
+      "text-decoration": "none",
       "display": "inline-block",
-      "font-size": "20px",
-        }
+      "font-size": "16px",
+    }
     return (
       <button style={style} onClick={this.handleClick}>
-        >>
+        Send
       </button>
-
     )
   }
 }
