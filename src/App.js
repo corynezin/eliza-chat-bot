@@ -7,22 +7,17 @@ import { InputBar } from "./components/InputBar";
 export class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {text: '', eliza: false}
+    this.state = {text: ''}
     this.setTextInput = this.setTextInput.bind(this)
   }
   setTextInput(text) {
     var currentText = this.state.text
-    if (this.state.eliza) {
-      text = 'Eliza: ' + text
-    } else {
-      text = 'You: ' + text
-    }
     if (currentText == '') {
       var newText = text
     } else {
       var newText = currentText + '\n' + text
     }
-    this.setState({text: newText, eliza: !this.state.eliza})
+    this.setState({text: newText})
   }
   render() {
     return (
