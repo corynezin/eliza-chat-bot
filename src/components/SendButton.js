@@ -16,7 +16,6 @@ export class SendButton extends React.Component {
       "color": "white",
       "width": "50px",
       "padding": "8px 0px",
-      "height": "40px",
       "text-align": "center",
       "text-decoration": "none",
       "display": "inline-block",

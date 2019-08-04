@@ -18,15 +18,18 @@ export class InputBar extends React.Component {
   render() {
     var inline ={
       display: "flex",
-      position: "absolute",
+      flexDirection: "row",
+      alignItems: "stretch",
       bottom: "10px",
       width: "100%",
+      height: "100%",
       margin: "auto",
+      position: "relative"
     }
     return (
       <div style={inline}>
-      <TextEnter style={inline} setTextInput={this.setTextInput}/>
-      <SendButton style={inline} clickButton={this.clickButton}/>
+        <TextEnter setTextInput={this.setTextInput}/>
+        <SendButton clickButton={this.clickButton}/>
       </div>
     )
   }

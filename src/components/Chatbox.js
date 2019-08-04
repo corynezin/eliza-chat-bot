@@ -2,7 +2,6 @@ import React from "react";
 import { TextBubble } from "./TextBubble";
 
 const style = {
-  border: "2px solid gray",
   width: "100%",
   height: "400px",
   overflow: "hidden",
