@@ -2,7 +2,7 @@ import React from "react";
 
 const style = {
   border: "2px solid gray",
-  width: "350px",
+  width: "100%",
   height: "40px",
   resize: "none"
 }

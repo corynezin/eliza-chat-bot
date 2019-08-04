@@ -25,16 +25,16 @@ export class App extends React.Component {
     this.setState({text: newText, eliza: !this.state.eliza})
   }
   render() {
+    var deborahisbeautiful = {
+      bottom: "10px",
+      width: "50%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    }
     return (
-      <div className="container">
-        <div className="row">
-          <div>
-            <Chatbox text={this.state.text}/>
-          </div>
-        </div>
-        <div className="row">
+      <div style={deborahisbeautiful}>
+          <Chatbox text={this.state.text}/>
           <InputBar setTextInput={this.setTextInput}/>
-        </div>
       </div>
     );
   }

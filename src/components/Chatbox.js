@@ -3,9 +3,8 @@ import { TextBubble } from "./TextBubble";
 
 const style = {
   border: "2px solid gray",
-  width: "400px",
-  height: "300px",
-  marginTop: "50px",
+  width: "100%",
+  height: "400px",
   overflow: "hidden",
   whiteSpace: "pre"
 }

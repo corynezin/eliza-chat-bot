@@ -17,12 +17,16 @@ export class InputBar extends React.Component {
   }
   render() {
     var inline ={
-      display: "flex"
+      display: "flex",
+      position: "absolute",
+      bottom: "10px",
+      width: "100%",
+      margin: "auto",
     }
     return (
       <div style={inline}>
-        <TextEnter style={inline} setTextInput={this.setTextInput}/>
-        <SendButton style={inline} clickButton={this.clickButton}/>
+      <TextEnter style={inline} setTextInput={this.setTextInput}/>
+      <SendButton style={inline} clickButton={this.clickButton}/>
       </div>
     )
   }
